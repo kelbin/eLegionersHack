@@ -1,0 +1,6 @@
+framework module Pods_eleghack {
+  umbrella header "Pods-eleghack-umbrella.h"
+
+  export *
+  module * { export * }
+}

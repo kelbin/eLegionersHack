@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0168BABB9DDF187F06AA61BE7071ABA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */; };
+		0BE07E892496260017A248AF6261CAC6 /* SwiftConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B5B6DA880ADA4130BCC09196858DDAD /* SwiftConfettiView.bundle */; };
+		24DFDD37F5368CF3E2AF572E422ED1B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */; };
+		2DD046C327093AAC00BDBD64 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046C227093AAC00BDBD64 /* Swinject-Dynamic */; };
+		2DD046C627093AEE00BDBD64 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046C527093AEE00BDBD64 /* FirebaseAnalytics */; };
+		2DD046C827093AEE00BDBD64 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046C727093AEE00BDBD64 /* FirebaseAnalyticsSwift-Beta */; };
+		2DD046CA27093AEE00BDBD64 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046C927093AEE00BDBD64 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		2DD046CC27093AEE00BDBD64 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046CB27093AEE00BDBD64 /* FirebaseAppDistribution-Beta */; };
+		2DD046CE27093AEE00BDBD64 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046CD27093AEE00BDBD64 /* FirebaseAuth */; };
+		2DD046D027093AEE00BDBD64 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046CF27093AEE00BDBD64 /* FirebaseCrashlytics */; };
+		2DD046D227093AEE00BDBD64 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046D127093AEE00BDBD64 /* FirebaseDatabase */; };
+		2DD046D427093AEE00BDBD64 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046D327093AEE00BDBD64 /* FirebaseDynamicLinks */; };
+		2DD046D627093AEE00BDBD64 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046D527093AEE00BDBD64 /* FirebaseFirestore */; };
+		2DD046D827093AEE00BDBD64 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046D727093AEE00BDBD64 /* FirebaseFirestoreSwift-Beta */; };
+		2DD046DA27093AEE00BDBD64 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046D927093AEE00BDBD64 /* FirebaseFunctions */; };
+		2DD046DC27093AEE00BDBD64 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046DB27093AEE00BDBD64 /* FirebaseInAppMessaging-Beta */; };
+		2DD046DE27093AEE00BDBD64 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046DD27093AEE00BDBD64 /* FirebaseInAppMessagingSwift-Beta */; };
+		2DD046E027093AEE00BDBD64 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046DF27093AEE00BDBD64 /* FirebaseInstallations */; };
+		2DD046E227093AEE00BDBD64 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046E127093AEE00BDBD64 /* FirebaseMLModelDownloader */; };
+		2DD046E427093AEE00BDBD64 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046E327093AEE00BDBD64 /* FirebaseMessaging */; };
+		2DD046E627093AEE00BDBD64 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046E527093AEE00BDBD64 /* FirebaseRemoteConfig */; };
+		2DD046E827093AEE00BDBD64 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046E727093AEE00BDBD64 /* FirebaseStorage */; };
+		2DD046EA27093AEE00BDBD64 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046E927093AEE00BDBD64 /* FirebaseStorageSwift-Beta */; };
+		2DD046ED27093B1900BDBD64 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD046EC27093B1900BDBD64 /* SnapKit-Dynamic */; };
+		3B8C8FBF7DD99F7BED056B545DC16CB5 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C7B39D0F20D42FD10BDFDFE232FA07 /* diamond.png */; };
+		51CF806573D3796A24CC7E4DDA24953F /* SwiftConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B54E7E50A0A562F0CDB9D28763FF865B /* SwiftConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF6C07073EFBAAA0BF262B6293F0F99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		77EDA865282C56486D59020DC1A8B64A /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = F13115664838CC856790DB45205DE2B5 /* confetti.png */; };
+		92211C35F3A35281CAB0035FA88701D6 /* Pods-eleghack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E18A06C3DEC9C631909183BA65125F5C /* Pods-eleghack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95E269D170B1B983289403B6C1D29CE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		964E7516918C72A2BB784B18787E4EC3 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 97592E4C8887746D627522ABBED2548A /* star.png */; };
+		AC320A47F4D58E2074F867F0DEDC95AF /* Pods-eleghack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F52A6C96163D16D3868C51E538EF41 /* Pods-eleghack-dummy.m */; };
+		AF5C6B6DE186E9FD216757900C49FCC4 /* SwiftConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22B3C992B86DA8468B9A16E9913209 /* SwiftConfettiView.swift */; };
+		BB1427892EE4CD83E2B01B211096E985 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B81D4D5FD215E660DD2B80F6932516 /* triangle.png */; };
+		C84FBE5763B868615C6DA7D5EFF0BF8D /* SwiftConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B0180EBC8F41517AF64573F95FBD20 /* SwiftConfettiView-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C6CBC79D3FD849D7E7B5AA1E02713CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2707A967B4DAC43D79339A5EE4E534C;
+			remoteInfo = "SwiftConfettiView-SwiftConfettiView";
+		};
+		8F8D08DB3AE410E180109C5AD4B82C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22CCBE4FECBA8F92492577B4E52497C;
+			remoteInfo = SwiftConfettiView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B81D4D5FD215E660DD2B80F6932516 /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = SwiftConfettiView/Assets/triangle.png; sourceTree = "<group>"; };
+		1EA74EAE12D5CE271066A34EEA8A87BA /* Pods-eleghack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eleghack.debug.xcconfig"; sourceTree = "<group>"; };
+		2DD7571776121185CF89A240C854CF3E /* Pods_eleghack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eleghack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B34A08048F3F861FB1DC829F720B93 /* Pods-eleghack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-eleghack-Info.plist"; sourceTree = "<group>"; };
+		4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4DC9A595BC276DD77E5080354EFFE74F /* SwiftConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E1142250C02E8A23D4082E848D4871 /* Pods-eleghack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eleghack.release.xcconfig"; sourceTree = "<group>"; };
+		5A22B3C992B86DA8468B9A16E9913209 /* SwiftConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftConfettiView.swift; path = SwiftConfettiView/Classes/SwiftConfettiView.swift; sourceTree = "<group>"; };
+		79C7B39D0F20D42FD10BDFDFE232FA07 /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = SwiftConfettiView/Assets/diamond.png; sourceTree = "<group>"; };
+		7B5B6DA880ADA4130BCC09196858DDAD /* SwiftConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftConfettiView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE8125069C6E33A7032D8A81332DF44 /* Pods-eleghack-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-eleghack-frameworks.sh"; sourceTree = "<group>"; };
+		849F9BBCDAE9969D5D7E241372058844 /* Pods-eleghack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-eleghack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85B0180EBC8F41517AF64573F95FBD20 /* SwiftConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftConfettiView-dummy.m"; sourceTree = "<group>"; };
+		8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8F0417EA806408669743B4B961CAA93E /* SwiftConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftConfettiView-Info.plist"; sourceTree = "<group>"; };
+		97592E4C8887746D627522ABBED2548A /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = SwiftConfettiView/Assets/star.png; sourceTree = "<group>"; };
+		98892D821DADA4C3C2965FE349280DFF /* ResourceBundle-SwiftConfettiView-SwiftConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftConfettiView-SwiftConfettiView-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B54E7E50A0A562F0CDB9D28763FF865B /* SwiftConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftConfettiView-umbrella.h"; sourceTree = "<group>"; };
+		C6F52A6C96163D16D3868C51E538EF41 /* Pods-eleghack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-eleghack-dummy.m"; sourceTree = "<group>"; };
+		C82C2108B971765429450EE44FD24CFD /* Pods-eleghack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-eleghack.modulemap"; sourceTree = "<group>"; };
+		CBBCC8DA60B6AAFD9B64B45C39469C30 /* SwiftConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftConfettiView-prefix.pch"; sourceTree = "<group>"; };
+		D9ACBFBDCB1B782AEBE0860E81E4F03C /* SwiftConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftConfettiView.modulemap; sourceTree = "<group>"; };
+		E18A06C3DEC9C631909183BA65125F5C /* Pods-eleghack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-eleghack-umbrella.h"; sourceTree = "<group>"; };
+		E41E4CF7A3A0F5DD2634C8262260275E /* SwiftConfettiView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftConfettiView.debug.xcconfig; sourceTree = "<group>"; };
+		EE7BB6A4E97C9A53ED7B0EA7B418BAA3 /* SwiftConfettiView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftConfettiView.release.xcconfig; sourceTree = "<group>"; };
+		F0B71D4DD29034C81D2D9601237AE696 /* Pods-eleghack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-eleghack-acknowledgements.plist"; sourceTree = "<group>"; };
+		F13115664838CC856790DB45205DE2B5 /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = SwiftConfettiView/Assets/confetti.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85080156859C18DD63FD64E36A510B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		884915455209C902014384B113D1A9DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E269D170B1B983289403B6C1D29CE1 /* Foundation.framework in Frameworks */,
+				0168BABB9DDF187F06AA61BE7071ABA9 /* QuartzCore.framework in Frameworks */,
+				24DFDD37F5368CF3E2AF572E422ED1B7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECF3FD7BA34B34AB0E693320A96179D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD046E427093AEE00BDBD64 /* FirebaseMessaging in Frameworks */,
+				2DD046E227093AEE00BDBD64 /* FirebaseMLModelDownloader in Frameworks */,
+				5FF6C07073EFBAAA0BF262B6293F0F99 /* Foundation.framework in Frameworks */,
+				2DD046DC27093AEE00BDBD64 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				2DD046CA27093AEE00BDBD64 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				2DD046EA27093AEE00BDBD64 /* FirebaseStorageSwift-Beta in Frameworks */,
+				2DD046C327093AAC00BDBD64 /* Swinject-Dynamic in Frameworks */,
+				2DD046C827093AEE00BDBD64 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				2DD046C627093AEE00BDBD64 /* FirebaseAnalytics in Frameworks */,
+				2DD046ED27093B1900BDBD64 /* SnapKit-Dynamic in Frameworks */,
+				2DD046D027093AEE00BDBD64 /* FirebaseCrashlytics in Frameworks */,
+				2DD046DE27093AEE00BDBD64 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				2DD046E627093AEE00BDBD64 /* FirebaseRemoteConfig in Frameworks */,
+				2DD046D227093AEE00BDBD64 /* FirebaseDatabase in Frameworks */,
+				2DD046CE27093AEE00BDBD64 /* FirebaseAuth in Frameworks */,
+				2DD046E827093AEE00BDBD64 /* FirebaseStorage in Frameworks */,
+				2DD046CC27093AEE00BDBD64 /* FirebaseAppDistribution-Beta in Frameworks */,
+				2DD046E027093AEE00BDBD64 /* FirebaseInstallations in Frameworks */,
+				2DD046DA27093AEE00BDBD64 /* FirebaseFunctions in Frameworks */,
+				2DD046D827093AEE00BDBD64 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				2DD046D627093AEE00BDBD64 /* FirebaseFirestore in Frameworks */,
+				2DD046D427093AEE00BDBD64 /* FirebaseDynamicLinks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0A778C0229E9BF1FD97896B93F3272B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		043BF08A623B7E15E0B60FCCE1865A04 /* SwiftConfettiView */ = {
+			isa = PBXGroup;
+			children = (
+				5A22B3C992B86DA8468B9A16E9913209 /* SwiftConfettiView.swift */,
+				85161D8A48C4E1C8464A39CAD7AA6E7E /* Resources */,
+				38DA7B14CBA6F107675B45DED5A091FB /* Support Files */,
+			);
+			path = SwiftConfettiView;
+			sourceTree = "<group>";
+		};
+		38DA7B14CBA6F107675B45DED5A091FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98892D821DADA4C3C2965FE349280DFF /* ResourceBundle-SwiftConfettiView-SwiftConfettiView-Info.plist */,
+				D9ACBFBDCB1B782AEBE0860E81E4F03C /* SwiftConfettiView.modulemap */,
+				85B0180EBC8F41517AF64573F95FBD20 /* SwiftConfettiView-dummy.m */,
+				8F0417EA806408669743B4B961CAA93E /* SwiftConfettiView-Info.plist */,
+				CBBCC8DA60B6AAFD9B64B45C39469C30 /* SwiftConfettiView-prefix.pch */,
+				B54E7E50A0A562F0CDB9D28763FF865B /* SwiftConfettiView-umbrella.h */,
+				E41E4CF7A3A0F5DD2634C8262260275E /* SwiftConfettiView.debug.xcconfig */,
+				EE7BB6A4E97C9A53ED7B0EA7B418BAA3 /* SwiftConfettiView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftConfettiView";
+			sourceTree = "<group>";
+		};
+		5CD561A6AEF9D7D0A9FED6A211423399 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				043BF08A623B7E15E0B60FCCE1865A04 /* SwiftConfettiView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63D98E8EFA5260CBC58EB0B89AFF4E64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DD7571776121185CF89A240C854CF3E /* Pods_eleghack.framework */,
+				7B5B6DA880ADA4130BCC09196858DDAD /* SwiftConfettiView.bundle */,
+				4DC9A595BC276DD77E5080354EFFE74F /* SwiftConfettiView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85161D8A48C4E1C8464A39CAD7AA6E7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F13115664838CC856790DB45205DE2B5 /* confetti.png */,
+				79C7B39D0F20D42FD10BDFDFE232FA07 /* diamond.png */,
+				97592E4C8887746D627522ABBED2548A /* star.png */,
+				02B81D4D5FD215E660DD2B80F6932516 /* triangle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A58CC817B370B2C67C5C8E714714048C /* Pods-eleghack */ = {
+			isa = PBXGroup;
+			children = (
+				C82C2108B971765429450EE44FD24CFD /* Pods-eleghack.modulemap */,
+				849F9BBCDAE9969D5D7E241372058844 /* Pods-eleghack-acknowledgements.markdown */,
+				F0B71D4DD29034C81D2D9601237AE696 /* Pods-eleghack-acknowledgements.plist */,
+				C6F52A6C96163D16D3868C51E538EF41 /* Pods-eleghack-dummy.m */,
+				7BE8125069C6E33A7032D8A81332DF44 /* Pods-eleghack-frameworks.sh */,
+				41B34A08048F3F861FB1DC829F720B93 /* Pods-eleghack-Info.plist */,
+				E18A06C3DEC9C631909183BA65125F5C /* Pods-eleghack-umbrella.h */,
+				1EA74EAE12D5CE271066A34EEA8A87BA /* Pods-eleghack.debug.xcconfig */,
+				53E1142250C02E8A23D4082E848D4871 /* Pods-eleghack.release.xcconfig */,
+			);
+			name = "Pods-eleghack";
+			path = "Target Support Files/Pods-eleghack";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				5CD561A6AEF9D7D0A9FED6A211423399 /* Pods */,
+				63D98E8EFA5260CBC58EB0B89AFF4E64 /* Products */,
+				D0C724D5A37A3D1F04C25F9F6ECA2841 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0C724D5A37A3D1F04C25F9F6ECA2841 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A58CC817B370B2C67C5C8E714714048C /* Pods-eleghack */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F0A778C0229E9BF1FD97896B93F3272B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */,
+				9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */,
+				8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4AD2064CBDD585DC2BCEE0BFABFA2118 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92211C35F3A35281CAB0035FA88701D6 /* Pods-eleghack-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84948F3E4A5249600BF18FAE6A6D66FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51CF806573D3796A24CC7E4DDA24953F /* SwiftConfettiView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03F66D947DA28C96721A906FC3B35500 /* Pods-eleghack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3396C1B3D01F846C5DF12FADB609D0D /* Build configuration list for PBXNativeTarget "Pods-eleghack" */;
+			buildPhases = (
+				4AD2064CBDD585DC2BCEE0BFABFA2118 /* Headers */,
+				2F048D4E20491768543F10D2CEA6BBD6 /* Sources */,
+				AECF3FD7BA34B34AB0E693320A96179D /* Frameworks */,
+				1BF5DF855B8644D6154A5FC947E4C8BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA17C24D6F7793BDCF6FD78E7DBBECF1 /* PBXTargetDependency */,
+			);
+			name = "Pods-eleghack";
+			packageProductDependencies = (
+				2DD046C227093AAC00BDBD64 /* Swinject-Dynamic */,
+				2DD046C527093AEE00BDBD64 /* FirebaseAnalytics */,
+				2DD046C727093AEE00BDBD64 /* FirebaseAnalyticsSwift-Beta */,
+				2DD046C927093AEE00BDBD64 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				2DD046CB27093AEE00BDBD64 /* FirebaseAppDistribution-Beta */,
+				2DD046CD27093AEE00BDBD64 /* FirebaseAuth */,
+				2DD046CF27093AEE00BDBD64 /* FirebaseCrashlytics */,
+				2DD046D127093AEE00BDBD64 /* FirebaseDatabase */,
+				2DD046D327093AEE00BDBD64 /* FirebaseDynamicLinks */,
+				2DD046D527093AEE00BDBD64 /* FirebaseFirestore */,
+				2DD046D727093AEE00BDBD64 /* FirebaseFirestoreSwift-Beta */,
+				2DD046D927093AEE00BDBD64 /* FirebaseFunctions */,
+				2DD046DB27093AEE00BDBD64 /* FirebaseInAppMessaging-Beta */,
+				2DD046DD27093AEE00BDBD64 /* FirebaseInAppMessagingSwift-Beta */,
+				2DD046DF27093AEE00BDBD64 /* FirebaseInstallations */,
+				2DD046E127093AEE00BDBD64 /* FirebaseMLModelDownloader */,
+				2DD046E327093AEE00BDBD64 /* FirebaseMessaging */,
+				2DD046E527093AEE00BDBD64 /* FirebaseRemoteConfig */,
+				2DD046E727093AEE00BDBD64 /* FirebaseStorage */,
+				2DD046E927093AEE00BDBD64 /* FirebaseStorageSwift-Beta */,
+				2DD046EC27093B1900BDBD64 /* SnapKit-Dynamic */,
+			);
+			productName = "Pods-eleghack";
+			productReference = 2DD7571776121185CF89A240C854CF3E /* Pods_eleghack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A2707A967B4DAC43D79339A5EE4E534C /* SwiftConfettiView-SwiftConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F05892BF30475D2953915005FC0D0C /* Build configuration list for PBXNativeTarget "SwiftConfettiView-SwiftConfettiView" */;
+			buildPhases = (
+				68465577FB850DF06B0CFF238DBC0CF2 /* Sources */,
+				85080156859C18DD63FD64E36A510B05 /* Frameworks */,
+				E867E41DA726C3EBD1C951D32574D71B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftConfettiView-SwiftConfettiView";
+			productName = "SwiftConfettiView-SwiftConfettiView";
+			productReference = 7B5B6DA880ADA4130BCC09196858DDAD /* SwiftConfettiView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F22CCBE4FECBA8F92492577B4E52497C /* SwiftConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D2909AC347297D7C2A13EB4C8AADDED /* Build configuration list for PBXNativeTarget "SwiftConfettiView" */;
+			buildPhases = (
+				84948F3E4A5249600BF18FAE6A6D66FC /* Headers */,
+				04CDBCCC124BEDA541284E2CC166DDD2 /* Sources */,
+				884915455209C902014384B113D1A9DB /* Frameworks */,
+				5464BFABD1264A24BEC122083A5A6F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4BA77DF39D5D562CFC72CE3A08F8370 /* PBXTargetDependency */,
+			);
+			name = SwiftConfettiView;
+			productName = SwiftConfettiView;
+			productReference = 4DC9A595BC276DD77E5080354EFFE74F /* SwiftConfettiView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			packageReferences = (
+				2DD046C127093AAC00BDBD64 /* XCRemoteSwiftPackageReference "Swinject" */,
+				2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2DD046EB27093B1900BDBD64 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 63D98E8EFA5260CBC58EB0B89AFF4E64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03F66D947DA28C96721A906FC3B35500 /* Pods-eleghack */,
+				F22CCBE4FECBA8F92492577B4E52497C /* SwiftConfettiView */,
+				A2707A967B4DAC43D79339A5EE4E534C /* SwiftConfettiView-SwiftConfettiView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BF5DF855B8644D6154A5FC947E4C8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5464BFABD1264A24BEC122083A5A6F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE07E892496260017A248AF6261CAC6 /* SwiftConfettiView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E867E41DA726C3EBD1C951D32574D71B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EDA865282C56486D59020DC1A8B64A /* confetti.png in Resources */,
+				3B8C8FBF7DD99F7BED056B545DC16CB5 /* diamond.png in Resources */,
+				964E7516918C72A2BB784B18787E4EC3 /* star.png in Resources */,
+				BB1427892EE4CD83E2B01B211096E985 /* triangle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CDBCCC124BEDA541284E2CC166DDD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84FBE5763B868615C6DA7D5EFF0BF8D /* SwiftConfettiView-dummy.m in Sources */,
+				AF5C6B6DE186E9FD216757900C49FCC4 /* SwiftConfettiView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F048D4E20491768543F10D2CEA6BBD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC320A47F4D58E2074F867F0DEDC95AF /* Pods-eleghack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68465577FB850DF06B0CFF238DBC0CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4BA77DF39D5D562CFC72CE3A08F8370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftConfettiView-SwiftConfettiView";
+			target = A2707A967B4DAC43D79339A5EE4E534C /* SwiftConfettiView-SwiftConfettiView */;
+			targetProxy = 7C6CBC79D3FD849D7E7B5AA1E02713CE /* PBXContainerItemProxy */;
+		};
+		FA17C24D6F7793BDCF6FD78E7DBBECF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftConfettiView;
+			target = F22CCBE4FECBA8F92492577B4E52497C /* SwiftConfettiView */;
+			targetProxy = 8F8D08DB3AE410E180109C5AD4B82C93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C3F9B71BFD47648A98D0C962183ADEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA74EAE12D5CE271066A34EEA8A87BA /* Pods-eleghack.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-eleghack/Pods-eleghack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-eleghack/Pods-eleghack.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23CB3F93311017CF5A0455E5F1931031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7BB6A4E97C9A53ED7B0EA7B418BAA3 /* SwiftConfettiView.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftConfettiView";
+				IBSC_MODULE = SwiftConfettiView;
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/ResourceBundle-SwiftConfettiView-SwiftConfettiView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		353980FD87128F79D1B9ADF893171C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E41E4CF7A3A0F5DD2634C8262260275E /* SwiftConfettiView.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftConfettiView";
+				IBSC_MODULE = SwiftConfettiView;
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/ResourceBundle-SwiftConfettiView-SwiftConfettiView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E0010F74624B6F2A6F24EC57E093B69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E1142250C02E8A23D4082E848D4871 /* Pods-eleghack.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-eleghack/Pods-eleghack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-eleghack/Pods-eleghack.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDE2A8E616D2C888D01A207B803FB007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7BB6A4E97C9A53ED7B0EA7B418BAA3 /* SwiftConfettiView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftConfettiView/SwiftConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftConfettiView;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFA410B157B73C3E5F518906ADE06EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E41E4CF7A3A0F5DD2634C8262260275E /* SwiftConfettiView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftConfettiView/SwiftConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftConfettiView;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D2909AC347297D7C2A13EB4C8AADDED /* Build configuration list for PBXNativeTarget "SwiftConfettiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA410B157B73C3E5F518906ADE06EAC /* Debug */,
+				EDE2A8E616D2C888D01A207B803FB007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F05892BF30475D2953915005FC0D0C /* Build configuration list for PBXNativeTarget "SwiftConfettiView-SwiftConfettiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353980FD87128F79D1B9ADF893171C49 /* Debug */,
+				23CB3F93311017CF5A0455E5F1931031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3396C1B3D01F846C5DF12FADB609D0D /* Build configuration list for PBXNativeTarget "Pods-eleghack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3F9B71BFD47648A98D0C962183ADEA /* Debug */,
+				E0010F74624B6F2A6F24EC57E093B69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DD046C127093AAC00BDBD64 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		2DD046EB27093B1900BDBD64 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DD046C227093AAC00BDBD64 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C127093AAC00BDBD64 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+		2DD046C527093AEE00BDBD64 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2DD046C727093AEE00BDBD64 /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		2DD046C927093AEE00BDBD64 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		2DD046CB27093AEE00BDBD64 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		2DD046CD27093AEE00BDBD64 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2DD046CF27093AEE00BDBD64 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		2DD046D127093AEE00BDBD64 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		2DD046D327093AEE00BDBD64 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		2DD046D527093AEE00BDBD64 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2DD046D727093AEE00BDBD64 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		2DD046D927093AEE00BDBD64 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		2DD046DB27093AEE00BDBD64 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		2DD046DD27093AEE00BDBD64 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		2DD046DF27093AEE00BDBD64 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		2DD046E127093AEE00BDBD64 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		2DD046E327093AEE00BDBD64 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		2DD046E527093AEE00BDBD64 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		2DD046E727093AEE00BDBD64 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		2DD046E927093AEE00BDBD64 /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046C427093AEE00BDBD64 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		2DD046EC27093B1900BDBD64 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD046EB27093B1900BDBD64 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
